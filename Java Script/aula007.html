@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - DOM </title>
+    <style>
+        body {
+            font: normal 16px;
+            font-family: 'Trebuchet MS';
+            text-align: center;
+            background-color: #7e7e7e;
+        }
+
+        input {
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 50px;
+            transition: transform 0.5s;
+        }
+
+        input:hover {
+            border: 2px solid red;
+            transform: scale(1.1);
+        }
+
+        #res:hover {
+            border: 2px solid red;
+            transform: scale(1.1);
+            
+        }
+
+        #res {
+            background-color: #d3d3d3;
+            width: 380px;
+            height: 30px;
+            margin-left: 80px;
+            padding: 40px;
+            border: 2px solid #7e7e7e;
+            border-radius: 20px;
+            font-size: 20px;
+            transition: transform 0.5s;
+        }
+
+        input[type=number]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Calculadora</h1>
+    <input type="number" name="" id="caixa1"> x
+    <input type="number" name="" id="caixa2">
+    <input type="button" value="=" onclick="somar()">
+    <div id="res">...</div>
+
+
+
+
+    <script>
+        function somar() {
+            var cx1 = document.getElementById("caixa1")
+            var cx2 = document.getElementById("caixa2")
+            var res = document.getElementById("res")
+            var n1 = Number(cx1.value)
+            var n2 = Number(cx2.value)
+            var s = n1 * n2
+            res.innerHTML = `A multiplicação entre ${n1} e ${n2} é igual à <strong> ${s}</strong>`
+        }
+    </script>
+</body>
+
+</html>

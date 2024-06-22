@@ -1,0 +1,116 @@
+AULA - 01
+alert() - alerta/mensagem
+confirm() Ok ou cancela (confirmação)
+prompt() caixa de diálogo/campo para a escrita
+
+AULA - 02
+var nome = prompt() - variável, cada variável recebe um nome
+alert('Olá,' + nome + '. É um prazer conhecê-lo!') - concatenação, assim de acordo com a resposta do usuário, o alerta
+mudará sua frase
+
+AULA - 03
+var n1 = Number(prompt('Digite um número'))
+var n2 = Number(prompt('Digite outro número'))
+var s = n1 + n2 - soma
+alert ('A soma dos valores é ' + s )
+
+para somas é preciso converter string para number
+number - numeros em geral
+number.parseInt - inteiros
+number.parseFloat - decimais
+
+Para simplificar uma concatenação, usar `${}` - template string
+
+
+AULA - 04
+var.lenght - número de caracteres da string
+var.toUpperCase() - tudo em letras MAIÚSCULAS
+var.toLowerCase() - tudo em letras minúsculas
+
+numeros com duas casas decimais - var.toFixed(numero de casas)
+numeros com virgula invés de ponto - var.toFixed().replace('.',',') - vai trocar ponto por virgula
+
+var.toLocaleString('pt-br' , {style: 'currency', currency: 'BRL'}) - numero com virgula com moedas nacionais
+
+
+AULA - 05
+Operadores
+5 + 2 = 7
+5 - 2 = 3
+5 * 2 = 10
+5 / 2 = 2.5
+5 % 2 = 1 (resto da divisão inteira, 2 x 2 = 4, sobra 1)
+5 ** 2 = 25 (potência)
+= - recebe
+== - igual - mesmo valor
+=== - idêntico - mesmo tipo e valor
+! - negação (true, false)
+&& - conjunção (true && true é a única expressão verdadeira) - executado antes de ||
+|| - disjunção (é necessário uma opção true para ser verdadeira. Ex - true && false == true)
+
+Ordem - 1º Operadores Aritméticos, 2º Operadores Relacionais, 3º Operadores Lógicos, 4º Operadores Ternários
+
+?'Nome' (se sim)
+:'Nome' (se não)
+
+AULA - 06
+DOM - Modelos de objetos para documentos (Documents Objects Model)
+
+- window -
+Location - endereço do site
+URL
+Document - arquivo atual
+HTML
+head - meta, tittle...
+body - h1, p, div...
+History - páginas anteriores e próximas
+
+Selecionando
+Marca - getElementsByTagName('tag')[numero da tag - começa no 0]
+definir uma variavel
+document.write(nome da variavel.innerHTML) - para document.write
+alert(nome da variavel.innerText) - para alert
+
+ID - document.getElementById()
+variavel.innerText ='Olá' - modificar o elemento HTML através de JS
+variavel.style.background = green - para mudar o estilo através do JS
+
+Class - document.getElementsByClassName()
+
+AULA - 07
+Eventos DOM - mouseenter, entre outras ações do mouse, caso necessário 
+pesquisar mais Eventos DOM
+
+Função 
+
+Ex:  <!--<div id="container" onclick="clicar()" >
+  Interaja...     
+</div>
+
+<script>
+  function clicar(){
+      var a = document.getElementById("container")
+      a.innerText = 'Olá' }
+} --> onclick - ao clicar
+Este exemplo significa que ao clicar na ID container, a escrita "Interaja..."
+passará a ser "Olá"
+
+IMPORTANTE
+Para ver se o código está errado, abrir no navegador em inspecionar, em console
+Consultar exemplo na aula 07
+
+AULA - 08
+CONDIÇÕES
+if (condição) {} - se a condição for verdadeira
+else {} - se a condição for falsa
+conferir exemplo na aula 08, 09, 10 e 11
+
+AULA - 12
+switch (expressão) {
+  case valor1:
+  break
+  default:
+  break
+}
+SEMPRE USAR BREAK DEPOIS DE CADA VALOR switch
+Conferir exemplo aula 12

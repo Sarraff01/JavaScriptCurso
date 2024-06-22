@@ -1,0 +1,33 @@
+body {
+    background-color: yellow;
+    font: normal 16pt Segoe Ui;
+
+}
+
+header {
+    background-color: black;
+    color: yellow;
+    width: 300px;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    width: 50%;
+    border-radius: 20px;
+    margin: auto;
+    font-size: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.39);
+    padding: 20px;
+}
+
+footer {
+    font-style: italic;
+    text-align: center;
+
+}
+#lista {
+    width: 150px;
+}
